@@ -428,6 +428,7 @@ body {
 .stock-link {
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .stock-link:hover .stock-code {
@@ -459,16 +460,15 @@ body {
 }
 
 .tv-icon {
-  font-size: 11px;
-  color: var(--text-muted);
-  opacity: 0;
-  transition: opacity 0.15s ease;
+  font-size: 10px;
+  color: var(--blue-dim);
+  opacity: 0.6;
   flex-shrink: 0;
+  transition: opacity 0.15s ease;
 }
 
 .stock-link:hover .tv-icon {
   opacity: 1;
-  color: var(--blue-bright);
 }
 
 /* Action badge */
