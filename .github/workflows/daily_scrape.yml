@@ -1,0 +1,49 @@
+name: Daily ETF Scrape
+
+on:
+  schedule:
+    # 18:30 Taiwan time (UTC+8) = 10:30 UTC, weekdays
+    - cron: '30 10 * * 1-5'
+  workflow_dispatch:   # allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+
+      - name: Run scraper
+        run: python scraper/main.py
+        env:
+          PYTHONIOENCODING: utf-8
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          if git diff --staged --quiet; then
+            echo "No data changes — skipping commit"
+          else
+            DATE=$(date -u '+%Y-%m-%d')
+            git commit -m "data: update holdings ${DATE}"
+            git push
+          fi

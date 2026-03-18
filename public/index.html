@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>00981A 主動統一台股增長｜持股追蹤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-left">
+          <span class="fund-badge">主動式 ETF</span>
+          <h1 class="fund-title">主動統一台股增長 <span class="fund-code">00981A</span></h1>
+        </div>
+        <div class="header-right">
+          <div class="report-label">主動操作日報</div>
+          <div class="report-date" id="report-date">載入中...</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Loading / Error -->
+    <div id="loading" class="loading-state">
+      <div class="spinner"></div>
+      <span>載入資料中...</span>
+    </div>
+    <div id="error-state" class="error-state" style="display:none">
+      <div class="error-icon">⚠️</div>
+      <div id="error-message">資料載入失敗</div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" style="display:none">
+      <!-- Fund Size Row -->
+      <section class="fund-size-section">
+        <div class="fund-size-card">
+          <div class="fund-size-label">基金規模</div>
+          <div class="fund-size-value">
+            <span id="fund-size" class="size-number">--</span>
+            <span class="size-unit">億</span>
+            <span id="fund-size-change" class="size-change">--</span>
+          </div>
+        </div>
+        <div class="fund-size-card">
+          <div class="fund-size-label">淨值 (NAV)</div>
+          <div class="fund-size-value">
+            <span id="nav-value" class="size-number">--</span>
+            <span class="size-unit">元</span>
+          </div>
+        </div>
+        <div class="fund-size-card">
+          <div class="fund-size-label">持股檔數</div>
+          <div class="fund-size-value">
+            <span id="total-stocks" class="size-number">--</span>
+            <span class="size-unit">檔</span>
+          </div>
+        </div>
+        <div class="fund-size-card">
+          <div class="fund-size-label">資料日期</div>
+          <div class="fund-size-value">
+            <span id="prev-date" class="size-number size-number--sm">--</span>
+            <span class="compare-arrow">→</span>
+            <span id="today-date" class="size-number size-number--sm">--</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary Cards -->
+      <section class="summary-section">
+        <div class="summary-card summary-card--new">
+          <div class="summary-icon">＋</div>
+          <div class="summary-count" id="count-new">0</div>
+          <div class="summary-label">新增持股</div>
+          <div class="summary-sublabel">檔</div>
+        </div>
+        <div class="summary-card summary-card--add">
+          <div class="summary-icon">↗</div>
+          <div class="summary-count" id="count-add">0</div>
+          <div class="summary-label">主動加碼</div>
+          <div class="summary-sublabel">檔</div>
+        </div>
+        <div class="summary-card summary-card--reduce">
+          <div class="summary-icon">↘</div>
+          <div class="summary-count" id="count-reduce">0</div>
+          <div class="summary-label">主動減碼</div>
+          <div class="summary-sublabel">檔</div>
+        </div>
+        <div class="summary-card summary-card--close">
+          <div class="summary-icon">✕</div>
+          <div class="summary-count" id="count-close">0</div>
+          <div class="summary-label">刪除持股</div>
+          <div class="summary-sublabel">檔</div>
+        </div>
+      </section>
+
+      <!-- Changes Table -->
+      <section class="table-section" id="changes-section">
+        <div class="section-header">
+          <h2 class="section-title">成分股操作明細</h2>
+          <span class="section-badge" id="changes-count">0 檔異動</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="changes-table">
+            <thead>
+              <tr>
+                <th class="col-stock">標的</th>
+                <th class="col-action">操作</th>
+                <th class="col-number">股數變動</th>
+                <th class="col-number">股數 %</th>
+                <th class="col-number">權重變動</th>
+                <th class="col-number">目前權重</th>
+              </tr>
+            </thead>
+            <tbody id="changes-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Unchanged Holdings -->
+      <section class="table-section" id="unchanged-section">
+        <div class="section-header collapsible" id="unchanged-toggle" role="button" tabindex="0">
+          <h2 class="section-title">未異動持股</h2>
+          <span class="section-badge" id="unchanged-count">0 檔</span>
+          <span class="collapse-icon" id="collapse-icon">▼</span>
+        </div>
+        <div class="table-wrap" id="unchanged-wrap">
+          <table class="data-table" id="unchanged-table">
+            <thead>
+              <tr>
+                <th class="col-stock">標的</th>
+                <th class="col-number">目前持股</th>
+                <th class="col-number">目前權重</th>
+                <th class="col-action-sm">狀態</th>
+              </tr>
+            </thead>
+            <tbody id="unchanged-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>資料來源：統一投信 ezmoney｜僅供參考，投資需自行評估風險</div>
+      <div id="scrape-time" class="scrape-time"></div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
