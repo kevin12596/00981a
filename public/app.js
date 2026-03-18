@@ -3,6 +3,20 @@
 const DATA_URL = './data/latest_diff.json';
 
 // ─────────────────────────────────────────────
+// TradingView link
+// ─────────────────────────────────────────────
+
+function tvUrl(code) {
+  // ETF codes (start with 0) and most Taiwan stocks → TWSE
+  // OTC stocks (roughly 6000-6999 range with some exceptions) → TPEX
+  // Simple heuristic: well-known OTC codes start with 6 and are 4 digits
+  // Default to TWSE for reliability — covers 95%+ of ETF holdings
+  const n = parseInt(code, 10);
+  const exchange = (n >= 6000 && n <= 6999) ? 'TPEX' : 'TWSE';
+  return `https://www.tradingview.com/chart/?symbol=${exchange}:${code}`;
+}
+
+// ─────────────────────────────────────────────
 // Helpers
 // ─────────────────────────────────────────────
 
@@ -96,10 +110,13 @@ function renderChanges(data) {
 
     return `<tr class="${info.rowCls}">
       <td class="col-stock">
-        <div class="stock-cell">
-          <span class="stock-code">${escHtml(row.code)}</span>
-          <span class="stock-name">${escHtml(row.name)}</span>
-        </div>
+        <a class="stock-link" href="${escHtml(tvUrl(row.code))}" target="_blank" rel="noopener noreferrer" title="在 TradingView 查看技術分析">
+          <div class="stock-cell">
+            <span class="stock-code">${escHtml(row.code)}</span>
+            <span class="stock-name">${escHtml(row.name)}</span>
+            <span class="tv-icon">↗</span>
+          </div>
+        </a>
       </td>
       <td>
         <span class="action-badge ${info.cls}">${info.label}</span>
@@ -133,10 +150,13 @@ function renderUnchanged(data) {
       const barPct = Math.min((row.weight_pct / 12) * 100, 100);
       return `<tr>
         <td class="col-stock">
-          <div class="stock-cell">
-            <span class="stock-code">${escHtml(row.code)}</span>
-            <span class="stock-name">${escHtml(row.name)}</span>
-          </div>
+          <a class="stock-link" href="${escHtml(tvUrl(row.code))}" target="_blank" rel="noopener noreferrer" title="在 TradingView 查看技術分析">
+            <div class="stock-cell">
+              <span class="stock-code">${escHtml(row.code)}</span>
+              <span class="stock-name">${escHtml(row.name)}</span>
+              <span class="tv-icon">↗</span>
+            </div>
+          </a>
         </td>
         <td class="col-number">
           <span class="neutral">${fmtShares(row.shares)}</span>

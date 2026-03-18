@@ -425,6 +425,20 @@ body {
 .row-close  { border-left: 3px solid var(--red-dim)   !important; }
 
 /* Stock cell */
+.stock-link {
+  text-decoration: none;
+  display: block;
+}
+
+.stock-link:hover .stock-code {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.stock-link:hover .stock-name {
+  color: var(--blue-bright);
+}
+
 .stock-cell {
   display: flex;
   align-items: center;
@@ -442,6 +456,19 @@ body {
 .stock-name {
   color: var(--text-primary);
   font-weight: 500;
+}
+
+.tv-icon {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  flex-shrink: 0;
+}
+
+.stock-link:hover .tv-icon {
+  opacity: 1;
+  color: var(--blue-bright);
 }
 
 /* Action badge */
