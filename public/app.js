@@ -9,7 +9,7 @@ const DATA_URL = './data/latest_diff.json';
 function tvUrl(code) {
   const n = parseInt(code, 10);
   const exchange = (n >= 6000 && n <= 6999) ? 'TPEX' : 'TWSE';
-  return `https://www.tradingview.com/symbols/${exchange}-${code}/`;
+  return `https://www.tradingview.com/chart/?symbol=${exchange}%3A${code}`;
 }
 
 // ─────────────────────────────────────────────
