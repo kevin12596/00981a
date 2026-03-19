@@ -14,22 +14,10 @@ FUND_NAME  = "主動統一台股增長"
 EZ_CODE    = "49YTW"          # ezmoney 內部代碼
 
 # ── Data sources (ordered by priority) ────────────────────────────────────
-SOURCES = {
-    "ezmoney": {
-        "url": f"https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode={EZ_CODE}&tabName=basic",
-        "wait_selector": "table",           # CSS selector to wait for
-        "timeout_ms": 30_000,
-    },
-    "uni_psg": {
-        "url": "https://www.uni-psg.com/fund/detail/00981A",
-        "wait_selector": "table",
-        "timeout_ms": 30_000,
-    },
-}
+EZMONEY_URL = f"https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode={EZ_CODE}&tabName=basic"
 
 # ── Scraper behaviour ──────────────────────────────────────────────────────
-RETRY_COUNT     = 3
-RETRY_DELAY_SEC = 300   # 5 minutes between retries
+RETRY_COUNT     = 2      # per strategy
 HEADLESS        = True
 
 # ── Classification thresholds ──────────────────────────────────────────────

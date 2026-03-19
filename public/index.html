@@ -19,6 +19,10 @@
           <div class="report-label">主動操作日報</div>
           <div class="report-date" id="report-date">載入中...</div>
         </div>
+        <button class="refresh-btn" id="refresh-btn" title="觸發重新抓取最新持股資料">
+          <span class="refresh-icon" id="refresh-icon">⟳</span>
+          <span class="refresh-label" id="refresh-label">更新資料</span>
+        </button>
       </div>
     </header>
 
@@ -141,6 +145,9 @@
         </div>
       </section>
     </main>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite"></div>
 
     <!-- Footer -->
     <footer class="footer">

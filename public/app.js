@@ -241,4 +241,60 @@ async function loadDashboard() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadDashboard);
+// ─────────────────────────────────────────────
+// Force-refresh button
+// ─────────────────────────────────────────────
+
+function showToast(msg, type = 'info', durationMs = 5000) {
+  const el = document.getElementById('toast');
+  if (!el) return;
+  el.textContent = msg;
+  el.className = `toast toast--${type} toast--show`;
+  clearTimeout(el._timer);
+  el._timer = setTimeout(() => el.classList.remove('toast--show'), durationMs);
+}
+
+async function triggerRefresh() {
+  const btn   = document.getElementById('refresh-btn');
+  const icon  = document.getElementById('refresh-icon');
+  const label = document.getElementById('refresh-label');
+
+  btn.disabled = true;
+  icon.classList.add('spin');
+  label.textContent = '更新中…';
+
+  try {
+    const res = await fetch('/api/refresh', { method: 'POST' });
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      showToast('✓ 已觸發更新！爬蟲執行中，約 5-10 分鐘後資料更新並自動部署。', 'success', 8000);
+    } else if (data.fallback_url) {
+      // GITHUB_TOKEN not configured — fall back to manual trigger
+      showToast('⚠ 尚未設定 GITHUB_TOKEN，請至 GitHub Actions 手動執行。', 'warn', 10000);
+      window.open(data.fallback_url, '_blank', 'noopener');
+    } else {
+      showToast(`⚠ 觸發失敗：${data.error || res.status}`, 'error');
+    }
+  } catch (err) {
+    // /api/refresh not reachable (e.g. local file open) — open GH Actions directly
+    window.open('https://github.com/kevin12596/00981a/actions/workflows/daily_scrape.yml', '_blank', 'noopener');
+  } finally {
+    // Re-enable button after 30 s to prevent spam
+    setTimeout(() => {
+      btn.disabled = false;
+      icon.classList.remove('spin');
+      label.textContent = '更新資料';
+    }, 30_000);
+  }
+}
+
+function initRefreshButton() {
+  const btn = document.getElementById('refresh-btn');
+  if (btn) btn.addEventListener('click', triggerRefresh);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadDashboard();
+  initRefreshButton();
+});

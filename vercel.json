@@ -1,5 +1,5 @@
 {
-  "buildCommand": "",
+  "buildCommand": "echo 'static site'",
   "outputDirectory": "public",
   "framework": null,
   "headers": [
