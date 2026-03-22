@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from config import FUND_CODE, LOG_DIR, SCRAPE_HOUR, SCRAPE_MINUTE
 import scraper as scraper_mod
 import comparator as comparator_mod
+import history as history_mod
 
 
 def setup_logging():
@@ -75,6 +76,8 @@ def run(target_date: str | None = None, dry_run: bool = False):
 
     if not dry_run:
         comparator_mod.save_diff(diff)
+        history_mod.save_history()
+        logger.success("History updated.")
 
     logger.success("Done.")
     return diff

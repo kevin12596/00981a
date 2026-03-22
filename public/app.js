@@ -1,6 +1,7 @@
 /* 00981A ETF Tracker — Frontend Logic */
 
-const DATA_URL = './data/latest_diff.json';
+const DATA_URL    = './data/latest_diff.json';
+const HISTORY_URL = './data/history.json';
 
 // ─────────────────────────────────────────────
 // TradingView link
@@ -294,7 +295,121 @@ function initRefreshButton() {
   if (btn) btn.addEventListener('click', triggerRefresh);
 }
 
+// ─────────────────────────────────────────────
+// Weight History Chart
+// ─────────────────────────────────────────────
+
+const CHART_PALETTE = [
+  '#4FC3F7','#81C784','#FFB74D','#F06292','#CE93D8',
+  '#80DEEA','#FFCC02','#FF8A65','#A5D6A7','#90CAF9',
+  '#FFAB91','#B39DDB','#80CBC4','#EF9A9A','#FFF176',
+  '#4DB6AC','#DCE775','#F48FB1','#E6EE9C','#80DEEA',
+];
+
+let weightChart   = null;
+let historyData   = null;
+let activeTopN    = 10;
+
+function buildDatasets(history, topN) {
+  return history.stocks.map((stock, i) => ({
+    label:           `${stock.code} ${stock.name}`,
+    data:            stock.weights,
+    borderColor:     CHART_PALETTE[i % CHART_PALETTE.length],
+    backgroundColor: 'transparent',
+    borderWidth:     (topN === 0 || i < topN) ? 2 : 1.5,
+    pointRadius:     history.dates.length <= 10 ? 4 : 2,
+    pointHoverRadius: 6,
+    tension:         0.3,
+    hidden:          topN > 0 && i >= topN,
+    spanGaps:        true,
+  }));
+}
+
+function renderWeightChart(history, topN) {
+  const ctx = document.getElementById('weight-chart');
+  if (!ctx) return;
+
+  const labels = history.dates.map(d => d.slice(5).replace('-', '/'));
+
+  if (weightChart) { weightChart.destroy(); weightChart = null; }
+
+  weightChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets: buildDatasets(history, topN) },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 350 },
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: '#8b949e',
+            usePointStyle: true,
+            pointStyle: 'circle',
+            padding: 14,
+            font: { size: 11, family: "'Segoe UI','PingFang TC',sans-serif" },
+          },
+        },
+        tooltip: {
+          backgroundColor: '#161b22',
+          borderColor: '#30363d',
+          borderWidth: 1,
+          titleColor: '#e6edf3',
+          bodyColor: '#8b949e',
+          padding: 10,
+          callbacks: {
+            title: items => history.dates[items[0].dataIndex],
+            label: item => {
+              const v = item.parsed.y;
+              if (v == null) return null;
+              return ` ${item.dataset.label}: ${v.toFixed(2)}%`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          grid:  { color: 'rgba(48,54,61,0.5)' },
+          ticks: { color: '#6e7681', font: { size: 11 } },
+        },
+        y: {
+          grid:  { color: 'rgba(48,54,61,0.5)' },
+          ticks: { color: '#6e7681', font: { size: 11 }, callback: v => v + '%' },
+          title: { display: true, text: '持股占比 (%)', color: '#6e7681', font: { size: 11 } },
+        },
+      },
+    },
+  });
+}
+
+async function loadChart() {
+  try {
+    const res = await fetch(HISTORY_URL);
+    if (!res.ok) return;
+    historyData = await res.json();
+    if (!historyData.dates || historyData.dates.length < 1) return;
+    renderWeightChart(historyData, activeTopN);
+  } catch (e) {
+    console.warn('[ETF Chart] Failed to load history:', e);
+  }
+}
+
+function initChartFilter() {
+  document.querySelectorAll('#chart-filter .pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#chart-filter .pill').forEach(p => p.classList.remove('pill--active'));
+      pill.classList.add('pill--active');
+      activeTopN = parseInt(pill.dataset.n, 10);
+      if (historyData) renderWeightChart(historyData, activeTopN);
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   loadDashboard();
   initRefreshButton();
+  loadChart();
+  initChartFilter();
 });

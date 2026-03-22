@@ -123,6 +123,30 @@
         </div>
       </section>
 
+      <!-- Weight History Chart -->
+      <section class="chart-section" id="chart-section">
+        <div class="chart-section-header">
+          <div class="chart-title-group">
+            <h2 class="section-title">持股權重走勢</h2>
+            <span class="chart-subtitle">橫軸為日期，縱軸為持股占比（%）</span>
+          </div>
+          <div class="chart-controls">
+            <span class="chart-filter-label">顯示前</span>
+            <div class="chart-filter-pills" id="chart-filter">
+              <button class="pill" data-n="5">5</button>
+              <button class="pill pill--active" data-n="10">10</button>
+              <button class="pill" data-n="15">15</button>
+              <button class="pill" data-n="0">全部</button>
+            </div>
+            <span class="chart-filter-label">檔</span>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="weight-chart"></canvas>
+        </div>
+        <div class="chart-tip">點擊圖例可隱藏 / 顯示個別股票</div>
+      </section>
+
       <!-- Unchanged Holdings -->
       <section class="table-section" id="unchanged-section">
         <div class="section-header collapsible" id="unchanged-toggle" role="button" tabindex="0">
@@ -156,6 +180,7 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
