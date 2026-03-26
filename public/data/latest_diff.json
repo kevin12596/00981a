@@ -1,129 +1,26 @@
 {
-  "date": "2026-03-25",
-  "prev_date": "2026-03-24",
+  "date": "2026-03-26",
+  "prev_date": "2026-03-25",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 53,
-  "scrape_time": "2026-03-25T14:38:06",
+  "scrape_time": "2026-03-26T06:02:15",
   "summary": {
-    "new_positions": 1,
-    "added_positions": 8,
+    "new_positions": 0,
+    "added_positions": 0,
     "reduced_positions": 0,
     "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "action": "NEW",
-      "shares_today": 388000,
-      "shares_yesterday": 0,
-      "shares_change": 388000,
-      "shares_change_pct": null,
-      "weight_today": 0.38,
-      "weight_yesterday": 0.0,
-      "weight_change": 0.38
-    },
-    {
-      "code": "3211",
-      "name": "順達",
-      "action": "ADD",
-      "shares_today": 3198000,
-      "shares_yesterday": 1596000,
-      "shares_change": 1602000,
-      "shares_change_pct": 100.38,
-      "weight_today": 1.14,
-      "weight_yesterday": 0.54,
-      "weight_change": 0.6
-    },
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "action": "ADD",
-      "shares_today": 5654000,
-      "shares_yesterday": 4259000,
-      "shares_change": 1395000,
-      "shares_change_pct": 32.75,
-      "weight_today": 2.05,
-      "weight_yesterday": 1.53,
-      "weight_change": 0.52
-    },
-    {
-      "code": "2345",
-      "name": "智邦",
-      "action": "ADD",
-      "shares_today": 3301000,
-      "shares_yesterday": 3219000,
-      "shares_change": 82000,
-      "shares_change_pct": 2.55,
-      "weight_today": 5.72,
-      "weight_yesterday": 5.33,
-      "weight_change": 0.39
-    },
-    {
-      "code": "2383",
-      "name": "台光電",
-      "action": "ADD",
-      "shares_today": 2636000,
-      "shares_yesterday": 2558000,
-      "shares_change": 78000,
-      "shares_change_pct": 3.05,
-      "weight_today": 7.71,
-      "weight_yesterday": 7.4,
-      "weight_change": 0.31
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "action": "ADD",
-      "shares_today": 5206000,
-      "shares_yesterday": 4956000,
-      "shares_change": 250000,
-      "shares_change_pct": 5.04,
-      "weight_today": 2.89,
-      "weight_yesterday": 2.62,
-      "weight_change": 0.27
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "action": "ADD",
-      "shares_today": 5719000,
-      "shares_yesterday": 3849000,
-      "shares_change": 1870000,
-      "shares_change_pct": 48.58,
-      "weight_today": 0.73,
-      "weight_yesterday": 0.47,
-      "weight_change": 0.26
-    },
-    {
-      "code": "3665",
-      "name": "貿聯-KY",
-      "action": "ADD",
-      "shares_today": 2775848,
-      "shares_yesterday": 2678848,
-      "shares_change": 97000,
-      "shares_change_pct": 3.62,
-      "weight_today": 5.15,
-      "weight_yesterday": 4.99,
-      "weight_change": 0.16
-    },
+  "changes": [],
+  "unchanged": [
     {
       "code": "1303",
       "name": "南亞",
-      "action": "ADD",
-      "shares_today": 17098000,
-      "shares_yesterday": 15337000,
-      "shares_change": 1761000,
-      "shares_change_pct": 11.48,
-      "weight_today": 1.34,
-      "weight_yesterday": 1.2,
-      "weight_change": 0.14
-    }
-  ],
-  "unchanged": [
+      "shares": 17098000,
+      "weight_pct": 1.34
+    },
     {
       "code": "1319",
       "name": "東陽",
@@ -173,6 +70,12 @@
       "weight_pct": 9.24
     },
     {
+      "code": "2345",
+      "name": "智邦",
+      "shares": 3301000,
+      "weight_pct": 5.72
+    },
+    {
       "code": "2357",
       "name": "華碩",
       "shares": 6000,
@@ -183,6 +86,12 @@
       "name": "金像電",
       "shares": 5841000,
       "weight_pct": 5.54
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "shares": 2636000,
+      "weight_pct": 7.71
     },
     {
       "code": "2404",
@@ -245,6 +154,12 @@
       "weight_pct": 0.96
     },
     {
+      "code": "3211",
+      "name": "順達",
+      "shares": 3198000,
+      "weight_pct": 1.14
+    },
+    {
       "code": "3217",
       "name": "優群",
       "shares": 356000,
@@ -299,6 +214,18 @@
       "weight_pct": 1.72
     },
     {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "shares": 2775848,
+      "weight_pct": 5.15
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "shares": 5654000,
+      "weight_pct": 2.05
+    },
+    {
       "code": "4979",
       "name": "華星光",
       "shares": 1037000,
@@ -311,6 +238,12 @@
       "weight_pct": 3.05
     },
     {
+      "code": "5347",
+      "name": "世界",
+      "shares": 5719000,
+      "weight_pct": 0.73
+    },
+    {
       "code": "5536",
       "name": "聖暉*",
       "shares": 5000,
@@ -321,6 +254,12 @@
       "name": "亞翔",
       "shares": 1724000,
       "weight_pct": 1.16
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "shares": 388000,
+      "weight_pct": 0.38
     },
     {
       "code": "6191",
@@ -369,6 +308,12 @@
       "name": "富世達",
       "shares": 682000,
       "weight_pct": 1.34
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 5206000,
+      "weight_pct": 2.89
     },
     {
       "code": "8210",
