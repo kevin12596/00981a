@@ -1,80 +1,19 @@
 {
-  "date": "2026-03-26",
-  "prev_date": "2026-03-25",
+  "date": "2026-03-27",
+  "prev_date": "2026-03-26",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 52,
-  "scrape_time": "2026-03-26T11:27:22",
+  "scrape_time": "2026-03-27T07:14:18",
   "summary": {
     "new_positions": 0,
-    "added_positions": 1,
-    "reduced_positions": 3,
-    "closed_positions": 1
+    "added_positions": 0,
+    "reduced_positions": 0,
+    "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "8046",
-      "name": "南電",
-      "action": "ADD",
-      "shares_today": 5697000,
-      "shares_yesterday": 5206000,
-      "shares_change": 491000,
-      "shares_change_pct": 9.43,
-      "weight_today": 3.32,
-      "weight_yesterday": 2.89,
-      "weight_change": 0.43
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "action": "REDUCE",
-      "shares_today": 339000,
-      "shares_yesterday": 531000,
-      "shares_change": -192000,
-      "shares_change_pct": -36.16,
-      "weight_today": 1.06,
-      "weight_yesterday": 1.72,
-      "weight_change": -0.66
-    },
-    {
-      "code": "6139",
-      "name": "亞翔",
-      "action": "REDUCE",
-      "shares_today": 1525000,
-      "shares_yesterday": 1724000,
-      "shares_change": -199000,
-      "shares_change_pct": -11.54,
-      "weight_today": 0.92,
-      "weight_yesterday": 1.16,
-      "weight_change": -0.24
-    },
-    {
-      "code": "8210",
-      "name": "勤誠",
-      "action": "REDUCE",
-      "shares_today": 1459000,
-      "shares_yesterday": 1622000,
-      "shares_change": -163000,
-      "shares_change_pct": -10.05,
-      "weight_today": 1.35,
-      "weight_yesterday": 1.51,
-      "weight_change": -0.16
-    },
-    {
-      "code": "5536",
-      "name": "聖暉*",
-      "action": "CLOSE",
-      "shares_today": 0,
-      "shares_yesterday": 5000,
-      "shares_change": -5000,
-      "shares_change_pct": -100.0,
-      "weight_today": 0.0,
-      "weight_yesterday": 0.0,
-      "weight_change": 0.0
-    }
-  ],
+  "changes": [],
   "unchanged": [
     {
       "code": "1303",
@@ -269,6 +208,12 @@
       "weight_pct": 5.55
     },
     {
+      "code": "3661",
+      "name": "世芯-KY",
+      "shares": 339000,
+      "weight_pct": 1.06
+    },
+    {
       "code": "3665",
       "name": "貿聯-KY",
       "shares": 2775848,
@@ -297,6 +242,12 @@
       "name": "世界",
       "shares": 5719000,
       "weight_pct": 0.68
+    },
+    {
+      "code": "6139",
+      "name": "亞翔",
+      "shares": 1525000,
+      "weight_pct": 0.92
     },
     {
       "code": "6187",
@@ -351,6 +302,18 @@
       "name": "富世達",
       "shares": 682000,
       "weight_pct": 1.33
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 5697000,
+      "weight_pct": 3.32
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "shares": 1459000,
+      "weight_pct": 1.35
     },
     {
       "code": "8358",
