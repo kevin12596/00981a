@@ -1,80 +1,19 @@
 {
-  "date": "2026-04-02",
-  "prev_date": "2026-04-01",
+  "date": "2026-04-03",
+  "prev_date": "2026-04-02",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 51,
-  "scrape_time": "2026-04-02T16:01:20",
+  "scrape_time": "2026-04-03T11:09:14",
   "summary": {
-    "new_positions": 1,
-    "added_positions": 2,
-    "reduced_positions": 2,
+    "new_positions": 0,
+    "added_positions": 0,
+    "reduced_positions": 0,
     "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "2481",
-      "name": "強茂",
-      "action": "NEW",
-      "shares_today": 1636000,
-      "shares_yesterday": 0,
-      "shares_change": 1636000,
-      "shares_change_pct": null,
-      "weight_today": 0.15,
-      "weight_yesterday": 0.0,
-      "weight_change": 0.15
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "action": "ADD",
-      "shares_today": 6895000,
-      "shares_yesterday": 6307000,
-      "shares_change": 588000,
-      "shares_change_pct": 9.32,
-      "weight_today": 3.78,
-      "weight_yesterday": 3.41,
-      "weight_change": 0.37
-    },
-    {
-      "code": "6805",
-      "name": "富世達",
-      "action": "ADD",
-      "shares_today": 1130000,
-      "shares_yesterday": 1030000,
-      "shares_change": 100000,
-      "shares_change_pct": 9.71,
-      "weight_today": 2.06,
-      "weight_yesterday": 1.87,
-      "weight_change": 0.19
-    },
-    {
-      "code": "8210",
-      "name": "勤誠",
-      "action": "REDUCE",
-      "shares_today": 480000,
-      "shares_yesterday": 1240000,
-      "shares_change": -760000,
-      "shares_change_pct": -61.29,
-      "weight_today": 0.39,
-      "weight_yesterday": 1.05,
-      "weight_change": -0.66
-    },
-    {
-      "code": "6488",
-      "name": "環球晶",
-      "action": "REDUCE",
-      "shares_today": 1330000,
-      "shares_yesterday": 1478000,
-      "shares_change": -148000,
-      "shares_change_pct": -10.01,
-      "weight_today": 0.53,
-      "weight_yesterday": 0.58,
-      "weight_change": -0.05
-    }
-  ],
+  "changes": [],
   "unchanged": [
     {
       "code": "1303",
@@ -177,6 +116,12 @@
       "name": "聯發科",
       "shares": 508000,
       "weight_pct": 0.72
+    },
+    {
+      "code": "2481",
+      "name": "強茂",
+      "shares": 1636000,
+      "weight_pct": 0.15
     },
     {
       "code": "3008",
@@ -323,6 +268,12 @@
       "weight_pct": 1.06
     },
     {
+      "code": "6488",
+      "name": "環球晶",
+      "shares": 1330000,
+      "weight_pct": 0.53
+    },
+    {
       "code": "6510",
       "name": "精測",
       "shares": 604000,
@@ -339,6 +290,24 @@
       "name": "緯穎",
       "shares": 76000,
       "weight_pct": 0.25
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "shares": 1130000,
+      "weight_pct": 2.06
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 6895000,
+      "weight_pct": 3.78
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "shares": 480000,
+      "weight_pct": 0.39
     },
     {
       "code": "8358",
