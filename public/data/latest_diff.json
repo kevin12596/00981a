@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-03",
-  "prev_date": "2026-04-02",
+  "date": "2026-04-06",
+  "prev_date": "2026-04-03",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 51,
-  "scrape_time": "2026-04-03T11:09:14",
+  "scrape_time": "2026-04-06T11:26:20",
   "summary": {
     "new_positions": 0,
     "added_positions": 0,
