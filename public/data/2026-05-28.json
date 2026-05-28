@@ -4,182 +4,194 @@
   "fund_name": "主動統一台股增長",
   "nav": null,
   "fund_size_billion": null,
-  "total_stocks": 51,
-  "scrape_time": "2026-05-28T00:20:55",
+  "total_stocks": 50,
+  "scrape_time": "2026-05-28T14:08:46",
   "holdings": [
     {
       "code": "2330",
       "name": "台積電",
-      "shares": 11657000,
-      "weight_pct": 9.23
+      "shares": 11960000,
+      "weight_pct": 9.75
     },
     {
       "code": "2383",
       "name": "台光電",
       "shares": 4723000,
-      "weight_pct": 8.63
+      "weight_pct": 8.48
     },
     {
       "code": "2454",
       "name": "聯發科",
       "shares": 4263000,
-      "weight_pct": 6.81
+      "weight_pct": 6.68
     },
     {
       "code": "2308",
       "name": "台達電",
       "shares": 6572000,
-      "weight_pct": 5.7
+      "weight_pct": 5.58
     },
     {
       "code": "2345",
       "name": "智邦",
       "shares": 6231000,
-      "weight_pct": 5.62
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "shares": 5141000,
-      "weight_pct": 4.78
-    },
-    {
-      "code": "6223",
-      "name": "旺矽",
-      "shares": 2169000,
-      "weight_pct": 4.77
-    },
-    {
-      "code": "3037",
-      "name": "欣興",
-      "shares": 12466000,
-      "weight_pct": 4.64
+      "weight_pct": 5.39
     },
     {
       "code": "2327",
       "name": "國巨*",
       "shares": 18313000,
-      "weight_pct": 4.42
+      "weight_pct": 4.83
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "shares": 5141000,
+      "weight_pct": 4.71
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "shares": 2169000,
+      "weight_pct": 4.56
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "shares": 12466000,
+      "weight_pct": 4.54
     },
     {
       "code": "6669",
       "name": "緯穎",
       "shares": 2344000,
-      "weight_pct": 4.1
+      "weight_pct": 4.12
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "shares": 17948000,
+      "weight_pct": 3.6
     },
     {
       "code": "2368",
       "name": "金像電",
       "shares": 7769000,
-      "weight_pct": 3.68
-    },
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "shares": 16640000,
-      "weight_pct": 3.68
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "shares": 11398000,
-      "weight_pct": 3.55
+      "weight_pct": 3.6
     },
     {
       "code": "2303",
       "name": "聯電",
       "shares": 71190000,
-      "weight_pct": 3.52
+      "weight_pct": 3.59
     },
     {
       "code": "3665",
       "name": "貿聯-KY",
       "shares": 4703848,
-      "weight_pct": 3.43
+      "weight_pct": 3.53
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 11398000,
+      "weight_pct": 3.44
     },
     {
       "code": "3653",
       "name": "健策",
       "shares": 2267000,
-      "weight_pct": 2.86
+      "weight_pct": 2.82
     },
     {
       "code": "5274",
       "name": "信驊",
       "shares": 422000,
-      "weight_pct": 2.65
+      "weight_pct": 2.67
     },
     {
       "code": "6274",
       "name": "台燿",
       "shares": 4151000,
-      "weight_pct": 2.33
+      "weight_pct": 2.27
     },
     {
       "code": "6515",
       "name": "穎崴",
       "shares": 442000,
-      "weight_pct": 1.49
+      "weight_pct": 1.43
     },
     {
       "code": "6805",
       "name": "富世達",
       "shares": 1761000,
-      "weight_pct": 1.05
-    },
-    {
-      "code": "8210",
-      "name": "勤誠",
-      "shares": 2167000,
-      "weight_pct": 1.04
+      "weight_pct": 1.1
     },
     {
       "code": "6510",
       "name": "精測",
       "shares": 930000,
+      "weight_pct": 1.08
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "shares": 2167000,
       "weight_pct": 1.02
     },
     {
       "code": "2449",
       "name": "京元電子",
       "shares": 8268000,
-      "weight_pct": 0.9
+      "weight_pct": 0.94
     },
     {
       "code": "3533",
       "name": "嘉澤",
       "shares": 852000,
-      "weight_pct": 0.77
+      "weight_pct": 0.75
     },
     {
       "code": "2404",
       "name": "漢唐",
       "shares": 1715000,
-      "weight_pct": 0.73
+      "weight_pct": 0.71
     },
     {
       "code": "6187",
       "name": "萬潤",
       "shares": 1334000,
-      "weight_pct": 0.52
+      "weight_pct": 0.59
     },
     {
       "code": "3264",
       "name": "欣銓",
       "shares": 6217000,
-      "weight_pct": 0.49
+      "weight_pct": 0.52
     },
     {
       "code": "5439",
       "name": "高技",
       "shares": 3528000,
-      "weight_pct": 0.47
+      "weight_pct": 0.46
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "shares": 4631000,
+      "weight_pct": 0.46
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "shares": 11635000,
+      "weight_pct": 0.43
     },
     {
       "code": "8996",
       "name": "高力",
       "shares": 1034000,
-      "weight_pct": 0.43
+      "weight_pct": 0.4
     },
     {
       "code": "3008",
@@ -191,13 +203,7 @@
       "code": "8358",
       "name": "金居",
       "shares": 1980000,
-      "weight_pct": 0.38
-    },
-    {
-      "code": "8150",
-      "name": "南茂",
-      "shares": 11635000,
-      "weight_pct": 0.38
+      "weight_pct": 0.39
     },
     {
       "code": "4966",
@@ -212,34 +218,22 @@
       "weight_pct": 0.3
     },
     {
-      "code": "6147",
-      "name": "頎邦",
-      "shares": 3201000,
-      "weight_pct": 0.29
-    },
-    {
       "code": "1590",
       "name": "亞德客-KY",
       "shares": 530000,
       "weight_pct": 0.26
     },
     {
-      "code": "6415",
-      "name": "矽力*-KY",
-      "shares": 1038000,
-      "weight_pct": 0.24
-    },
-    {
       "code": "3443",
       "name": "創意",
       "shares": 96000,
-      "weight_pct": 0.17
+      "weight_pct": 0.16
     },
     {
       "code": "6191",
       "name": "精成科",
       "shares": 3988000,
-      "weight_pct": 0.13
+      "weight_pct": 0.14
     },
     {
       "code": "3376",
@@ -269,7 +263,7 @@
       "code": "1319",
       "name": "東陽",
       "shares": 511000,
-      "weight_pct": 0.01
+      "weight_pct": 0.02
     },
     {
       "code": "2357",
