@@ -1,92 +1,19 @@
 {
-  "date": "2026-06-01",
-  "prev_date": "2026-05-29",
+  "date": "2026-06-02",
+  "prev_date": "2026-06-01",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 51,
-  "scrape_time": "2026-06-01T16:20:59",
+  "scrape_time": "2026-06-02T00:12:10",
   "summary": {
     "new_positions": 0,
-    "added_positions": 4,
-    "reduced_positions": 2,
+    "added_positions": 0,
+    "reduced_positions": 0,
     "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "2382",
-      "name": "廣達",
-      "action": "ADD",
-      "shares_today": 4025000,
-      "shares_yesterday": 2491000,
-      "shares_change": 1534000,
-      "shares_change_pct": 61.58,
-      "weight_today": 0.52,
-      "weight_yesterday": 0.3,
-      "weight_change": 0.22
-    },
-    {
-      "code": "3443",
-      "name": "創意",
-      "action": "ADD",
-      "shares_today": 167000,
-      "shares_yesterday": 96000,
-      "shares_change": 71000,
-      "shares_change_pct": 73.96,
-      "weight_today": 0.27,
-      "weight_yesterday": 0.16,
-      "weight_change": 0.11
-    },
-    {
-      "code": "6147",
-      "name": "頎邦",
-      "action": "ADD",
-      "shares_today": 5775000,
-      "shares_yesterday": 4631000,
-      "shares_change": 1144000,
-      "shares_change_pct": 24.7,
-      "weight_today": 0.57,
-      "weight_yesterday": 0.49,
-      "weight_change": 0.08
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "action": "ADD",
-      "shares_today": 71690000,
-      "shares_yesterday": 71190000,
-      "shares_change": 500000,
-      "shares_change_pct": 0.7,
-      "weight_today": 3.61,
-      "weight_yesterday": 3.6,
-      "weight_change": 0.01
-    },
-    {
-      "code": "2383",
-      "name": "台光電",
-      "action": "REDUCE",
-      "shares_today": 4486000,
-      "shares_yesterday": 4723000,
-      "shares_change": -237000,
-      "shares_change_pct": -5.02,
-      "weight_today": 7.84,
-      "weight_yesterday": 8.45,
-      "weight_change": -0.61
-    },
-    {
-      "code": "3264",
-      "name": "欣銓",
-      "action": "REDUCE",
-      "shares_today": 2117000,
-      "shares_yesterday": 6217000,
-      "shares_change": -4100000,
-      "shares_change_pct": -65.95,
-      "weight_today": 0.16,
-      "weight_yesterday": 0.53,
-      "weight_change": -0.37
-    }
-  ],
+  "changes": [],
   "unchanged": [
     {
       "code": "1319",
@@ -111,6 +38,12 @@
       "name": "中鋼",
       "shares": 5163000,
       "weight_pct": 0.03
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "shares": 71690000,
+      "weight_pct": 3.61
     },
     {
       "code": "2308",
@@ -161,6 +94,18 @@
       "weight_pct": 3.55
     },
     {
+      "code": "2382",
+      "name": "廣達",
+      "shares": 4025000,
+      "weight_pct": 0.52
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "shares": 4486000,
+      "weight_pct": 7.84
+    },
+    {
       "code": "2404",
       "name": "漢唐",
       "shares": 1715000,
@@ -209,10 +154,22 @@
       "weight_pct": 4.51
     },
     {
+      "code": "3264",
+      "name": "欣銓",
+      "shares": 2117000,
+      "weight_pct": 0.16
+    },
+    {
       "code": "3376",
       "name": "新日興",
       "shares": 1741000,
       "weight_pct": 0.13
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "shares": 167000,
+      "weight_pct": 0.27
     },
     {
       "code": "3533",
@@ -267,6 +224,12 @@
       "name": "高技",
       "shares": 3528000,
       "weight_pct": 0.46
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "shares": 5775000,
+      "weight_pct": 0.57
     },
     {
       "code": "6187",
