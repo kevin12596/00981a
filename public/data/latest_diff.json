@@ -1,25 +1,62 @@
 {
-  "date": "2026-07-10",
-  "prev_date": "2026-07-09",
+  "date": "2026-07-13",
+  "prev_date": "2026-07-10",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 50,
-  "scrape_time": "2026-07-10T12:40:01",
+  "scrape_time": "2026-07-13T12:44:17",
   "summary": {
     "new_positions": 0,
-    "added_positions": 0,
+    "added_positions": 3,
     "reduced_positions": 0,
     "closed_positions": 0
   },
-  "changes": [],
+  "changes": [
+    {
+      "code": "3037",
+      "name": "欣興",
+      "action": "ADD",
+      "shares_today": 16333000,
+      "shares_yesterday": 15779000,
+      "shares_change": 554000,
+      "shares_change_pct": 3.51,
+      "weight_today": 5.48,
+      "weight_yesterday": 5.03,
+      "weight_change": 0.45
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "action": "ADD",
+      "shares_today": 9231000,
+      "shares_yesterday": 9149000,
+      "shares_change": 82000,
+      "shares_change_pct": 0.9,
+      "weight_today": 4.36,
+      "weight_yesterday": 4.05,
+      "weight_change": 0.31
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "action": "ADD",
+      "shares_today": 15139000,
+      "shares_yesterday": 14770000,
+      "shares_change": 369000,
+      "shares_change_pct": 2.5,
+      "weight_today": 3.77,
+      "weight_yesterday": 3.64,
+      "weight_change": 0.13
+    }
+  ],
   "unchanged": [
     {
       "code": "1590",
       "name": "亞德客-KY",
       "shares": 528000,
-      "weight_pct": 0.25
+      "weight_pct": 0.26
     },
     {
       "code": "1815",
@@ -31,19 +68,19 @@
       "code": "2002",
       "name": "中鋼",
       "shares": 5163000,
-      "weight_pct": 0.03
+      "weight_pct": 0.04
     },
     {
       "code": "2303",
       "name": "聯電",
       "shares": 86550000,
-      "weight_pct": 4.91
+      "weight_pct": 4.94
     },
     {
       "code": "2308",
       "name": "台達電",
       "shares": 5052000,
-      "weight_pct": 3.46
+      "weight_pct": 3.55
     },
     {
       "code": "2313",
@@ -61,25 +98,25 @@
       "code": "2327",
       "name": "國巨*",
       "shares": 25098000,
-      "weight_pct": 8.22
+      "weight_pct": 7.61
     },
     {
       "code": "2330",
       "name": "台積電",
       "shares": 11960000,
-      "weight_pct": 10.51
+      "weight_pct": 10.85
     },
     {
       "code": "2345",
       "name": "智邦",
       "shares": 6334000,
-      "weight_pct": 5.69
+      "weight_pct": 5.66
     },
     {
       "code": "2368",
       "name": "金像電",
       "shares": 8315000,
-      "weight_pct": 3.25
+      "weight_pct": 3.23
     },
     {
       "code": "2382",
@@ -91,7 +128,7 @@
       "code": "2383",
       "name": "台光電",
       "shares": 4653000,
-      "weight_pct": 8.97
+      "weight_pct": 8.87
     },
     {
       "code": "2439",
@@ -103,13 +140,13 @@
       "code": "2449",
       "name": "京元電子",
       "shares": 1886000,
-      "weight_pct": 0.21
+      "weight_pct": 0.22
     },
     {
       "code": "2454",
       "name": "聯發科",
       "shares": 5131000,
-      "weight_pct": 7.33
+      "weight_pct": 7.3
     },
     {
       "code": "2481",
@@ -127,13 +164,7 @@
       "code": "3017",
       "name": "奇鋐",
       "shares": 5191000,
-      "weight_pct": 4.44
-    },
-    {
-      "code": "3037",
-      "name": "欣興",
-      "shares": 15779000,
-      "weight_pct": 5.03
+      "weight_pct": 4.29
     },
     {
       "code": "3264",
@@ -145,7 +176,7 @@
       "code": "3376",
       "name": "新日興",
       "shares": 1741000,
-      "weight_pct": 0.12
+      "weight_pct": 0.13
     },
     {
       "code": "3443",
@@ -163,7 +194,7 @@
       "code": "3653",
       "name": "健策",
       "shares": 2267000,
-      "weight_pct": 2.64
+      "weight_pct": 2.69
     },
     {
       "code": "3661",
@@ -175,13 +206,7 @@
       "code": "3665",
       "name": "貿聯-KY",
       "shares": 4833848,
-      "weight_pct": 3.28
-    },
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "shares": 14770000,
-      "weight_pct": 3.64
+      "weight_pct": 3.35
     },
     {
       "code": "4958",
@@ -199,7 +224,7 @@
       "code": "5274",
       "name": "信驊",
       "shares": 416900,
-      "weight_pct": 2.07
+      "weight_pct": 2.1
     },
     {
       "code": "5347",
@@ -211,13 +236,13 @@
       "code": "5439",
       "name": "高技",
       "shares": 3528000,
-      "weight_pct": 0.42
+      "weight_pct": 0.41
     },
     {
       "code": "6147",
       "name": "頎邦",
       "shares": 6275000,
-      "weight_pct": 0.5
+      "weight_pct": 0.46
     },
     {
       "code": "6187",
@@ -235,61 +260,55 @@
       "code": "6223",
       "name": "旺矽",
       "shares": 2443000,
-      "weight_pct": 6.3
+      "weight_pct": 6.03
     },
     {
       "code": "6271",
       "name": "同欣電",
       "shares": 2966000,
-      "weight_pct": 0.27
+      "weight_pct": 0.26
     },
     {
       "code": "6274",
       "name": "台燿",
       "shares": 5160000,
-      "weight_pct": 2.95
+      "weight_pct": 2.97
     },
     {
       "code": "6278",
       "name": "台表科",
       "shares": 4334000,
-      "weight_pct": 0.31
+      "weight_pct": 0.29
     },
     {
       "code": "6488",
       "name": "環球晶",
       "shares": 50000,
-      "weight_pct": 0.02
+      "weight_pct": 0.03
     },
     {
       "code": "6510",
       "name": "精測",
       "shares": 411000,
-      "weight_pct": 0.43
+      "weight_pct": 0.42
     },
     {
       "code": "6515",
       "name": "穎崴",
       "shares": 204000,
-      "weight_pct": 0.58
+      "weight_pct": 0.56
     },
     {
       "code": "6669",
       "name": "緯穎",
       "shares": 2417000,
-      "weight_pct": 4.43
+      "weight_pct": 4.46
     },
     {
       "code": "6805",
       "name": "富世達",
       "shares": 1811000,
-      "weight_pct": 0.96
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "shares": 9149000,
-      "weight_pct": 4.05
+      "weight_pct": 0.95
     },
     {
       "code": "8150",
@@ -301,7 +320,7 @@
       "code": "8210",
       "name": "勤誠",
       "shares": 2267000,
-      "weight_pct": 0.97
+      "weight_pct": 0.96
     },
     {
       "code": "8358",
