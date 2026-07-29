@@ -1,56 +1,19 @@
 {
-  "date": "2026-07-28",
-  "prev_date": "2026-07-27",
+  "date": "2026-07-29",
+  "prev_date": "2026-07-28",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 51,
-  "scrape_time": "2026-07-28T12:20:08",
+  "scrape_time": "2026-07-29T06:39:06",
   "summary": {
     "new_positions": 0,
-    "added_positions": 1,
-    "reduced_positions": 2,
+    "added_positions": 0,
+    "reduced_positions": 0,
     "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "2449",
-      "name": "京元電子",
-      "action": "ADD",
-      "shares_today": 7443450,
-      "shares_yesterday": 7089000,
-      "shares_change": 354450,
-      "shares_change_pct": 5.0,
-      "weight_today": 0.7,
-      "weight_yesterday": 0.73,
-      "weight_change": -0.03
-    },
-    {
-      "code": "2330",
-      "name": "台積電",
-      "action": "REDUCE",
-      "shares_today": 10740000,
-      "shares_yesterday": 11840000,
-      "shares_change": -1100000,
-      "shares_change_pct": -9.29,
-      "weight_today": 9.71,
-      "weight_yesterday": 10.39,
-      "weight_change": -0.68
-    },
-    {
-      "code": "5439",
-      "name": "高技",
-      "action": "REDUCE",
-      "shares_today": 1586000,
-      "shares_yesterday": 2280000,
-      "shares_change": -694000,
-      "shares_change_pct": -30.44,
-      "weight_today": 0.13,
-      "weight_yesterday": 0.2,
-      "weight_change": -0.07
-    }
-  ],
+  "changes": [],
   "unchanged": [
     {
       "code": "1590",
@@ -95,6 +58,12 @@
       "weight_pct": 5.61
     },
     {
+      "code": "2330",
+      "name": "台積電",
+      "shares": 10740000,
+      "weight_pct": 9.71
+    },
+    {
       "code": "2345",
       "name": "智邦",
       "shares": 6334000,
@@ -129,6 +98,12 @@
       "name": "美律",
       "shares": 1000,
       "weight_pct": 0.0
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "shares": 7443450,
+      "weight_pct": 0.7
     },
     {
       "code": "2454",
@@ -237,6 +212,12 @@
       "name": "世界",
       "shares": 1000,
       "weight_pct": 0.0
+    },
+    {
+      "code": "5439",
+      "name": "高技",
+      "shares": 1586000,
+      "weight_pct": 0.13
     },
     {
       "code": "6147",
