@@ -1,44 +1,19 @@
 {
-  "date": "2026-10-22",
-  "prev_date": "2026-10-21",
+  "date": "2026-10-23",
+  "prev_date": "2026-10-22",
   "fund_size_today": null,
   "fund_size_yesterday": null,
   "fund_size_change_pct": null,
   "nav": null,
   "total_stocks": 50,
-  "scrape_time": "2026-10-22T15:26:32",
+  "scrape_time": "2026-10-23T15:28:22",
   "summary": {
     "new_positions": 0,
-    "added_positions": 1,
+    "added_positions": 0,
     "reduced_positions": 0,
-    "closed_positions": 1
+    "closed_positions": 0
   },
-  "changes": [
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "action": "ADD",
-      "shares_today": 8895000,
-      "shares_yesterday": 8348000,
-      "shares_change": 547000,
-      "shares_change_pct": 6.55,
-      "weight_today": 2.18,
-      "weight_yesterday": 2.08,
-      "weight_change": 0.1
-    },
-    {
-      "code": "4966",
-      "name": "譜瑞-KY",
-      "action": "CLOSE",
-      "shares_today": 0,
-      "shares_yesterday": 1000,
-      "shares_change": -1000,
-      "shares_change_pct": -100.0,
-      "weight_today": 0.0,
-      "weight_yesterday": 0.0,
-      "weight_change": 0.0
-    }
-  ],
+  "changes": [],
   "unchanged": [
     {
       "code": "1590",
@@ -213,6 +188,12 @@
       "name": "貿聯-KY",
       "shares": 2887848,
       "weight_pct": 2.03
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "shares": 8895000,
+      "weight_pct": 2.18
     },
     {
       "code": "4958",
